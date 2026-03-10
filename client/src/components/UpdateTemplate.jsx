@@ -132,8 +132,8 @@ export default function UpdateTemplate({ type }) {
                 placeholder='Nome do Imóvel'
                 className='border border-gray-300 focus:border-slate-500 focus:ring-1 focus:ring-slate-500 focus:outline-none rounded-xl p-3 shadow-sm'
                 id='name'
-                maxLength='62'
-                minLength='10'
+                maxLength='70'
+                minLength='20'
                 required
                 onChange={handleChange}
                 value={formData.name}

@@ -139,7 +139,7 @@ export default function UpdateImo() {
       if (+formData.regularPrice < +formData.discountPrice) return setErrorSubmit("O preço com desconto deve ser menor que o preço normal");
       setLoadingSubmit(true);
       setErrorSubmit(false);
-      const res = await fetch(`${import.meta.env.VITE_API_KEY_ONRENDER}/api/imo/update/${params.imoId}`, {
+      const res = await fetch(`/api/imo/update/${params.imoId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -113,7 +113,7 @@ export default function Home() {
                   {imo.description?.substring(0, 100)}...
                 </p>
                 <Link
-                  to={`/imo/${imo._id}`}
+                  to={`/api/imo/${imo._id}`}
                   className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-md text-sm font-semibold shadow-md transition duration-300"
                 >
                   Ver mais detalhes
